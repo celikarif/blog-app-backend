@@ -42,11 +42,17 @@ Handles blog post management.
 
 
 POST	/save	Creates a new post.
+
 GET	/listOfPosts	Lists all posts.
+
 GET	/getPostById	Retrieves a post by its ID.
+
 GET	/listOfPostsByUserId	Retrieves posts by a specific user ID.
+
 POST	/by-categories	Retrieves posts by category IDs.
+
 DELETE	/delete	Deletes a specific post.
+
 PUT	/update	Updates an existing post.
 
 3. Comment
