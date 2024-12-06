@@ -13,7 +13,9 @@ How to Run the Backend Application
 ### `This project uses PostgreSQL as the database.`
 
 spring.datasource.url=jdbc:mysql://localhost:3306/<database-name>
+
 spring.datasource.username=<username>
+
 spring.datasource.password=<password>
 
 4) Build the project to download dependencies:
