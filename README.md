@@ -40,6 +40,7 @@ Handles blog post management.
 
     Base URL: /post
 
+
 POST	/save	Creates a new post.
 GET	/listOfPosts	Lists all posts.
 GET	/getPostById	Retrieves a post by its ID.
