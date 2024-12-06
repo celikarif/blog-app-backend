@@ -15,7 +15,6 @@ spring.datasource.username=<username>
 spring.datasource.password=<password>`
 
 4) Build the project to download dependencies:
-
-###` ./mvnw clean install `
+### `./mvnw clean install`
 
 5) Run the application
