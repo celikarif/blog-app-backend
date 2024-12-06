@@ -20,3 +20,80 @@ spring.datasource.password=<password>
 ### `./mvnw clean install`
 
 5) Run the application
+
+
+Blog Application Java Spring Boot Documentation
+
+
+1. User
+
+Manages user-related operations.
+
+    Base URL: /user
+
+POST	/save	Creates a new user.
+GET	/getAllUsers	Retrieves all users.
+
+2. Post
+
+Handles blog post management.
+
+    Base URL: /post
+
+POST	/save	Creates a new post.
+GET	/listOfPosts	Lists all posts.
+GET	/getPostById	Retrieves a post by its ID.
+GET	/listOfPostsByUserId	Retrieves posts by a specific user ID.
+POST	/by-categories	Retrieves posts by category IDs.
+DELETE	/delete	Deletes a specific post.
+PUT	/update	Updates an existing post.
+
+3. Comment
+
+Manages comments on posts.
+
+    Base URL: /comment
+
+HTTP Method	Endpoint	Description
+POST	/save	Adds a new comment.
+DELETE	/delete	Deletes a specific comment.
+PUT	/update	Updates an existing comment.
+GET	/getAllCommentsByPostId	Retrieves comments for a specific post ID.
+
+4. Category
+
+Handles category-related operations.
+
+    Base URL: /category
+
+HTTP Method	Endpoint	Description
+POST	/save	Creates a new category.
+GET		Lists all categories.
+DELETE	/delete	Deletes a specific category.
+PUT	/update	Updates an existing category.
+Service Implementations
+UserService
+
+Manages user-related operations:
+
+    Hashes passwords using BCryptPasswordEncoder.
+    Saves and retrieves users.
+
+PostService
+
+Provides operations for post management:
+
+    Create, list, update, and delete posts.
+    Filters posts by categories or user.
+
+CommentService
+
+Handles CRUD operations for comments:
+
+    Filters comments by post ID.
+
+CategoryService
+
+Offers CRUD operations for categories:
+
+    Add, list, update, and delete categories.
